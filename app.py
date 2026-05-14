@@ -1,4 +1,9 @@
 import streamlit as st
+from PIL import Image
+from sentiment import analizar_sentimiento
+from ocr import extraer_texto
+from mqtt_client import enviar_mqtt
+from text_to_speech import generar_audio
 
 st.set_page_config(page_title="Sistema Multimodal", layout="wide")
 
